@@ -7,13 +7,30 @@ body {
 }
 .grid {
   display: grid;
+  grid-gap: 10px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
+.main-image {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.main-text {
+  margin: 0 auto;
+}
+main p {
+  font-size: 14px;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/GOT-backround.webp");
@@ -107,5 +124,12 @@ footer a {
   }
   header h3 {
     font-size: 10px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .main-text {
+    padding-left: 50px;
   }
 }
